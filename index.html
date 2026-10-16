@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nova Calculator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="page">
+    <header class="heading">
+      <div class="logo">✦</div>
+      <h1>Nova Calculator</h1>
+      <p>Simple calculations, beautiful experience.</p>
+    </header>
+
+    <section class="calculator" aria-label="Calculator">
+      <div class="display" aria-live="polite">
+        <div id="expression" class="expression">Ready to calculate</div>
+        <div id="result" class="result">0</div>
+      </div>
+
+      <div class="keypad">
+        <button class="key utility" data-action="clear">C</button>
+        <button class="key utility" data-action="delete" aria-label="Delete last digit">⌫</button>
+        <button class="key operator" data-operator="÷">÷</button>
+        <button class="key operator" data-operator="×">×</button>
+
+        <button class="key" data-number="7">7</button>
+        <button class="key" data-number="8">8</button>
+        <button class="key" data-number="9">9</button>
+        <button class="key operator" data-operator="−">−</button>
+
+        <button class="key" data-number="4">4</button>
+        <button class="key" data-number="5">5</button>
+        <button class="key" data-number="6">6</button>
+        <button class="key operator" data-operator="+">+</button>
+
+        <button class="key" data-number="1">1</button>
+        <button class="key" data-number="2">2</button>
+        <button class="key" data-number="3">3</button>
+        <button class="key utility" data-action="sign">±</button>
+
+        <button class="key zero" data-number="0">0</button>
+        <button class="key" data-action="decimal">.</button>
+        <button class="key equals" data-action="equals">=</button>
+      </div>
+
+      <p class="hint">Tip: You can also use your keyboard.</p>
+    </section>
+
+    <footer>Made with HTML, CSS &amp; JavaScript</footer>
+  </main>
+</body>
+</html>
